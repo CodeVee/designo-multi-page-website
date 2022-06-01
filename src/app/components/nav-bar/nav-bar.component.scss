@@ -8,6 +8,11 @@
   &__logo {
     width: 19.6rem;
     height: 2.4rem;
+
+    &--light {
+      width: 20.2rem;
+      height: 2.7rem;
+    }
   }
 
   &__list {
@@ -28,5 +33,9 @@
   &__link {
     text-decoration: none;
     color: $dark-grey;
+
+    &--white {
+      color: $white;
+    }
   }
 }

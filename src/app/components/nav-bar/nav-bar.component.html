@@ -1,14 +1,15 @@
 <div class="navbar">
-  <img src="assets/shared/desktop/logo-dark.png" alt="logo" class="navbar__logo">
+  <img *ngIf="!darkMode" src="assets/shared/desktop/logo-dark.png" alt="logo" class="navbar__logo">
+  <img *ngIf="darkMode" src="assets/shared/desktop/logo-light.png" alt="logo" class="navbar__logo--light">
   <ul class="navbar__list">
     <li class="navbar__item">
-      <a routerLink="/company" class="navbar__link">Our Company</a>
+      <a routerLink="/company" class="navbar__link" [ngClass]="{'navbar__link--white': darkMode}">Our Company</a>
     </li>
     <li class="navbar__item">
-      <a routerLink="/locations" class="navbar__link">Locations</a>
+      <a routerLink="/locations" class="navbar__link" [ngClass]="{'navbar__link--white': darkMode}">Locations</a>
     </li>
     <li class="navbar__item">
-      <a routerLink="/contact" class="navbar__link">Contact</a>
+      <a routerLink="/contact" class="navbar__link" [ngClass]="{'navbar__link--white': darkMode}">Contact</a>
     </li>
   </ul>
 </div>

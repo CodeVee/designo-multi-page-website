@@ -1,0 +1,23 @@
+@import 'variables';
+
+
+.text {
+
+  &-regular {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+}
+
+.fw {
+
+  &-400 {
+    font-weight: $fw-400;
+  }
+  &-500 {
+    font-weight: $fw-500;
+  }
+  &-700 {
+    font-weight: $fw-700;
+  }
+}

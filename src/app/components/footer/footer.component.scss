@@ -1,0 +1,54 @@
+@import 'components';
+
+.bar {
+  height: 1px;
+  background: $white;
+  opacity: .1;
+  margin: 4rem 0 3.1rem;
+}
+
+.contact {
+  display: flex;
+
+  &__info {
+    width: 35rem;
+    height: 7.8rem;
+    margin-right: auto;
+    color: $white;
+    opacity: .5;
+    font-size: 1.6rem;
+
+
+    &:first-of-type {
+      margin-right: 3rem;
+    }
+  }
+
+  &__header {
+    font-weight: $fw-700;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+
+  &__sub {
+    font-weight: $fw-400;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+
+  &__social {
+    width: 18.4rem;
+    height: 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+  }
+
+  &__link {
+
+    img {
+      height: 2.4rem;
+      width: 2.4rem;
+    }
+  }
+}
