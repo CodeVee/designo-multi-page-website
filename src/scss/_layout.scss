@@ -12,3 +12,12 @@
     width: 32.7rem;
   }
 }
+
+.grid {
+  display: grid;
+  gap: 3rem;
+
+  &-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
