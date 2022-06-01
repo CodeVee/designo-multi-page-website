@@ -10,6 +10,9 @@
   <img src="assets/home/desktop/phone.png" alt="phone" class="header__img">
   <img src="assets/shared/desktop/bg-pattern-small-circle.svg" alt="ball" class="ball">
 </header>
+<section class="design grid grid-2 grid-2r">
+  <app-design-card class="design__item" *ngFor="let designType of designTypes" [designType]="designType"></app-design-card>
+</section>
 <section class="goals grid grid-3">
   <div class="goal">
     <figure class="goal__img">
@@ -42,4 +45,5 @@
     </p>
   </div>
 </section>
+
 

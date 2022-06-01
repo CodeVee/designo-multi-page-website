@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LowerBannerComponent } from './components/lower-banner/lower-banner.component';
+import { DesignCardComponent } from './components/design-card/design-card.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { LowerBannerComponent } from './components/lower-banner/lower-banner.com
     AppRoutingModule.components,
     NavBarComponent,
     FooterComponent,
-    LowerBannerComponent
+    LowerBannerComponent,
+    DesignCardComponent
   ],
   imports: [
     BrowserModule,

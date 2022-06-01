@@ -13,6 +13,11 @@
     line-height: 4rem;
   }
 
+  &-mds {
+    font-size: 4rem;
+    line-height: 4.8rem;
+  }
+
   &-sm {
     font-size: 2rem;
     line-height: 2.6rem;
@@ -73,6 +78,13 @@
   border-radius: 1.5rem;
 }
 
-.ls-5 {
-  letter-spacing: .5rem;
+.ls {
+
+  &-2 {
+    letter-spacing: .2rem;
+  }
+
+  &-5 {
+    letter-spacing: .5rem;
+  }
 }
