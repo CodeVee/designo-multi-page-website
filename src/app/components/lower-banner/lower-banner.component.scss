@@ -1,0 +1,40 @@
+@import 'layout';
+@import 'components';
+
+.banner {
+  height: 29.2rem;
+  background-color: $peach;
+  border-radius: 1.5rem;
+  position: relative;
+  padding: 7.2rem 9.6rem 4.6rem 9.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+
+  &__info {
+    width: 45.9rem;
+
+    h4 {
+      width: 30rem;
+      height: 9.8rem;
+    }
+  }
+
+  .ball {
+    position: absolute;
+    right: 0;
+    z-index: 0;
+  }
+
+  .btn {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.bg {
+  height: 7.2rem;
+  background: $black;
+  margin-top: -7.2rem;
+}

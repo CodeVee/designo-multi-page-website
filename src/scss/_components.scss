@@ -3,9 +3,18 @@
 
 .text {
 
+  &-medium {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
   &-regular {
     font-size: 1.6rem;
     line-height: 2.6rem;
+  }
+
+  &-white {
+    color: $white;
   }
 }
 
@@ -19,5 +28,24 @@
   }
   &-700 {
     font-weight: $fw-700;
+  }
+}
+
+.btn {
+  border: none;
+  outline: none;
+  width: 15.2rem;
+  height: 5.6rem;
+  border-radius: .8rem;
+  font-size: 1.5rem;
+  font-weight: $fw-500;
+  line-height: 2.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+
+  &-light {
+    color: $dark-grey;
+    background: $white;
   }
 }
