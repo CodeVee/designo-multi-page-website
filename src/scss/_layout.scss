@@ -1,0 +1,14 @@
+@import 'mixins';
+
+.container {
+  width: 111.1rem;
+  margin: 0 auto;
+
+  @include tablet-wide {
+    width: 68.9rem;
+  }
+
+  @include mobile-wide {
+    width: 32.7rem;
+  }
+}

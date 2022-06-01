@@ -1,0 +1,32 @@
+@import 'variables';
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    width: 19.6rem;
+    height: 2.4rem;
+  }
+
+  &__list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 37rem;
+  }
+
+  &__item {
+    font-weight: $fw-400;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $dark-grey;
+  }
+}
