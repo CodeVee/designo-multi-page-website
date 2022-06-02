@@ -1,0 +1,28 @@
+@import 'components';
+
+.banner {
+  height: 48rem;
+  display: flex;
+  overflow: hidden;
+
+  &__info {
+    width: 63.5rem;
+    padding: 13.5rem 9.5rem 13.5rem 8.2rem;
+
+    h2 {
+      margin-bottom: 3.2rem;
+    }
+  }
+
+  &__projected {
+    flex: 1;
+  }
+
+  &__img {
+    position: absolute;
+    height: 64rem;
+    width: 64rem;
+    left: 0;
+    top: -16rem;
+  }
+}

@@ -1,0 +1,14 @@
+<div class="bg-peach br-15 banner relative mb">
+  <img src="assets/about/desktop/bg-pattern-hero-about-desktop.svg" alt="ball" class="banner__img">
+  <div class="banner__info">
+    <h2 class="text-white text-lg fw-500">
+      <ng-content select=".head"></ng-content>
+    </h2>
+    <p class="text-white text-xs fw-400">
+      <ng-content select=".text"></ng-content>
+    </p>
+  </div>
+  <div class="banner__projected relative">
+    <ng-content select=".right-side"></ng-content>
+  </div>
+</div>

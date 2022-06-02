@@ -10,6 +10,7 @@ import { LowerBannerComponent } from './components/lower-banner/lower-banner.com
 import { DesignCardComponent } from './components/design-card/design-card.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { UpperBannerComponent } from './components/upper-banner/upper-banner.component';
+import { BigBannerComponent } from './components/big-banner/big-banner.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { UpperBannerComponent } from './components/upper-banner/upper-banner.com
     LowerBannerComponent,
     DesignCardComponent,
     ProductCardComponent,
-    UpperBannerComponent
+    UpperBannerComponent,
+    BigBannerComponent
   ],
   imports: [
     BrowserModule,
