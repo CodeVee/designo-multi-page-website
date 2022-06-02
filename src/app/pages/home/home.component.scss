@@ -1,6 +1,26 @@
 @import 'layout';
 @import 'components';
 
+.home {
+  position: relative;
+
+  &__img {
+    width: 100.6rem;
+    height: 59.4rem;
+    position: absolute;
+
+    &--1 {
+      top: 32rem;
+      left: -16.5rem;
+    }
+
+    &--2 {
+      bottom: -14.9rem;
+      right: -15.5rem;
+      transform: rotate(180deg);
+    }
+  }
+}
 .header {
   height: 64rem;
   padding: 14.5rem 9.6rem 0 9.5rem;
@@ -45,6 +65,7 @@
   align-items: center;
   text-align: center;
   margin-bottom: 16rem;
+  position: relative;
 
 
   &__img {
