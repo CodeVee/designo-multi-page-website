@@ -1,3 +1,43 @@
+@import 'components';
+
 .note {
   width: 100%;
+}
+
+.br-left {
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+
+.br-right {
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+.board {
+  height: 64rem;
+  display: flex;
+  background: $plain-peach;
+
+  &__img {
+    width: 47.6rem;
+
+  }
+
+  &__info {
+    flex: 1;
+    padding: 15.4rem 9.6rem 15.4rem 9.4rem;
+
+    h3 {
+      margin-bottom: 2.4rem;
+    }
+  }
+
+
+
+  &__details {
+    height: 26rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
 }
