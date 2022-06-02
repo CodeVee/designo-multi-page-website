@@ -1,0 +1,20 @@
+@import 'components';
+
+
+.product {
+  background: $plain-peach;
+
+  &__img {
+    height: 32rem;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+  }
+
+  &__info {
+    padding: 3.2rem;
+  }
+
+  &__header {
+    margin-bottom: 1.6rem;
+  }
+}

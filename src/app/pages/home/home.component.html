@@ -1,7 +1,7 @@
 <div class="home">
   <img src="assets/shared/desktop/bg-pattern-leaf.svg" alt="leaf" class="home__img home__img--1">
   <img src="assets/shared/desktop/bg-pattern-leaf.svg" alt="leaf" class="home__img home__img--2">
-  <header class="banner header">
+  <header class="bg-peach br-15 mb header">
     <div class="header__info">
       <h1 class="text-lg fw-500 text-white">Award-winning custom designs and digital branding solutions</h1>
       <p class="text-xs fw-400 text-white">
@@ -13,10 +13,10 @@
     <img src="assets/home/desktop/phone.png" alt="phone" class="header__img">
     <img src="assets/shared/desktop/bg-pattern-small-circle.svg" alt="ball" class="ball">
   </header>
-  <section class="design grid grid-2">
+  <section class="design mb grid grid-2">
     <app-design-card class="design__item" *ngFor="let designType of designTypes" [designType]="designType"></app-design-card>
   </section>
-  <section class="goals grid grid-3">
+  <section class="goals mb grid grid-3">
     <div class="goal">
       <figure class="goal__img">
         <img src="assets/home/desktop/illustration-passionate.svg" alt="Passionate">
@@ -48,6 +48,9 @@
       </p>
     </div>
   </section>
+  <!-- <section class="products grid grid-3">
+    <app-product-card *ngFor="let item of list"></app-product-card>
+  </section> -->
 </div>
 
 

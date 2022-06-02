@@ -36,8 +36,16 @@
     color: $dark-grey;
   }
 
+  &-peach {
+    color: $peach;
+  }
+
   &-upper {
     text-transform: uppercase;
+  }
+
+  &-center {
+    text-align: center;
   }
 }
 
@@ -73,9 +81,20 @@
   }
 }
 
-.banner {
+.bg-peach {
   background: $peach;
+}
+
+.br-15 {
   border-radius: 1.5rem;
+}
+
+.mb {
+  margin-bottom: 16rem;
+}
+
+.relative {
+  position: relative;
 }
 
 .ls {

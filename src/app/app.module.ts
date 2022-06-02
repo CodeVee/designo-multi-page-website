@@ -8,6 +8,7 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LowerBannerComponent } from './components/lower-banner/lower-banner.component';
 import { DesignCardComponent } from './components/design-card/design-card.component';
+import { ProductCardComponent } from './components/product-card/product-card.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DesignCardComponent } from './components/design-card/design-card.compon
     NavBarComponent,
     FooterComponent,
     LowerBannerComponent,
-    DesignCardComponent
+    DesignCardComponent,
+    ProductCardComponent
   ],
   imports: [
     BrowserModule,
