@@ -1,5 +1,24 @@
 @import 'components';
 
+.about {
+  &__img {
+    width: 100.6rem;
+    height: 59.4rem;
+    position: absolute;
+
+    &--1 {
+      top: 32rem;
+      left: -16.5rem;
+    }
+
+    &--2 {
+      bottom: 39rem;
+      right: -55.5rem;
+      transform: rotate(180deg);
+    }
+  }
+}
+
 .note {
   width: 100%;
 }
