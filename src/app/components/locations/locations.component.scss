@@ -1,0 +1,24 @@
+@import 'components';
+@import 'layout';
+
+
+.location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__img {
+    width: 20.2rem;
+    height: 20.2rem;
+    border-radius: 50%;
+    margin-bottom: 4.8rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__header {
+    margin-bottom: 3.2rem;
+  }
+}

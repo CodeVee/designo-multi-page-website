@@ -79,6 +79,11 @@
     color: $dark-grey;
     background: $white;
   }
+
+  &-peach {
+    color: $white;
+    background: $peach;
+  }
 }
 
 .bg-peach {
@@ -106,4 +111,13 @@
   &-5 {
     letter-spacing: .5rem;
   }
+}
+
+.peach-mask {
+  background: linear-gradient(90deg, rgba(93, 2, 2, 0.0001) 0%, rgba(93, 2, 2, 0.497569) 100%);
+  opacity: .2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
 }
