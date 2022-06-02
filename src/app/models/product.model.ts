@@ -4,6 +4,12 @@ export interface Product {
   imageUrl: string;
 }
 
+export enum ProductType {
+  Web,
+  App,
+  Graphic
+}
+
 export const WebProducts: Product[] = [
   { header: 'Express', message: 'A multi-carrier shipping website for ecommerce businesses', imageUrl: 'assets/web-design/desktop/image-express.jpg' },
   { header: 'Transfer', message: 'Site for low-cost money transfers and sending money within seconds', imageUrl: 'assets/web-design/desktop/image-transfer.jpg' },
@@ -23,6 +29,6 @@ export const AppProducts: Product[] = [
 
 export const GraphicProducts: Product[] = [
   { header: 'Tim Brown', message: 'A book cover designed for Tim Brown’s new release, ‘Change’', imageUrl: 'assets/graphic-design/desktop/image-change.jpg' },
-  { header: 'Boxed water', message: 'A simple packaging concept made for Boxed Water', imageUrl: 'assets/graphic-design/desktop/image-boxed.jpg' },
+  { header: 'Boxed water', message: 'A simple packaging concept made for Boxed Water', imageUrl: 'assets/graphic-design/desktop/image-boxed-water.jpg' },
   { header: 'Science!', message: 'A poster made in collaboration with the Federal Art Project', imageUrl: 'assets/graphic-design/desktop/image-science.jpg' }
 ]

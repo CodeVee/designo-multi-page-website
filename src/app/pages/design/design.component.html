@@ -1,0 +1,12 @@
+<div class="relative">
+  <img src="assets/shared/desktop/bg-pattern-leaf.svg" alt="leaf" class="leaf">
+  <app-upper-banner [header]="header" [text]="message"></app-upper-banner>
+  <section class="products mb grid grid-3">
+      <app-product-card *ngFor="let product of products" [product]="product"></app-product-card>
+  </section>
+  <section class="design mb grid grid-2">
+    <app-design-card class="design__item" *ngFor="let designType of designTypes" [designType]="designType"></app-design-card>
+  </section>
+</div>
+
+

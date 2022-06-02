@@ -7,6 +7,8 @@
   align-items: center;
   position: relative;
   height: 100%;
+  cursor: pointer;
+  text-decoration: none;
 
   &__mask {
     position: absolute;
