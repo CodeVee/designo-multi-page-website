@@ -78,11 +78,20 @@
   &-light {
     color: $dark-grey;
     background: $white;
+
+    &:hover {
+      color: $white;
+      background: $light-peach;
+    }
   }
 
   &-peach {
     color: $white;
     background: $peach;
+
+    &:hover {
+      background: $light-peach;
+    }
   }
 }
 

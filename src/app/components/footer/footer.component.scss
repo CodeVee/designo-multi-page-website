@@ -42,6 +42,7 @@
     display: flex;
     justify-content: space-between;
     align-self: flex-end;
+    align-items: center;
   }
 
   &__link {
@@ -49,6 +50,26 @@
     img {
       height: 2.4rem;
       width: 2.4rem;
+    }
+
+    .second {
+      display: none;
+    }
+
+    &:nth-child(3) {
+      img {
+        height: 2rem;
+      }
+    }
+
+    &:hover {
+      .first {
+        display: none;
+      }
+
+      .second {
+        display: inline;
+      }
     }
   }
 }

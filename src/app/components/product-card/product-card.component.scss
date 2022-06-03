@@ -5,6 +5,14 @@
   background: $plain-peach;
   cursor: pointer;
 
+  &:hover {
+    background: $peach;
+
+    h3, p {
+      color: $white;
+    }
+  }
+
   &__img {
     height: 32rem;
     border-top-left-radius: 1.5rem;

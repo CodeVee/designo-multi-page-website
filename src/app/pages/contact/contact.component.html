@@ -7,11 +7,36 @@
       we can help your business grow. If you are looking for unique digital experiences that’s
       relatable to your <br> users, drop us a line.
     </span>
-    <form class="form right-side">
-      <input type="text" class="form__input text-xs text-white fw-500" placeholder="Name">
-      <input type="email" class="form__input text-xs text-white fw-500" placeholder="Email Address">
-      <input type="text" class="form__input text-xs text-white fw-500" placeholder="Phone">
-      <textarea class="form__input form__area  text-xs text-white fw-500" placeholder="Your Message"></textarea>
+    <form [formGroup]="contactForm" class="form right-side">
+      <div class="form__control relative" >
+        <input formControlName="name" type="text" class="form__input text-xs text-white fw-500" placeholder="Name">
+        <div *ngIf="nameCtrl.touched && nameCtrl.dirty && nameCtrl.invalid" class="form__error">
+          <span>Can't be empty</span>
+          <img src="assets/contact/desktop/icon-error.svg" alt="error">
+        </div>
+      </div>
+      <div class="form__control relative">
+        <input formControlName="email" type="email" class="form__input text-xs text-white fw-500" placeholder="Email Address">
+        <div *ngIf="emailCtrl.touched && emailCtrl.dirty && emailCtrl.invalid" class="form__error">
+          <span *ngIf="emailCtrl.errors?.required">Can't be empty</span>
+          <span *ngIf="emailCtrl.errors?.email">Please use a valid email address</span>
+          <img src="assets/contact/desktop/icon-error.svg" alt="error">
+        </div>
+      </div>
+      <div class="form__control relative">
+        <input formControlName="phone" type="text" class="form__input text-xs text-white fw-500" placeholder="Phone">
+        <div *ngIf="phoneCtrl.touched && phoneCtrl.dirty && phoneCtrl.invalid" class="form__error">
+          <span>Can't be empty</span>
+          <img src="assets/contact/desktop/icon-error.svg" alt="error">
+        </div>
+      </div>
+      <div class="form__control form__area relative">
+        <textarea formControlName="message" class="form__input form__input--area  text-xs text-white fw-500" placeholder="Your Message"></textarea>
+        <div *ngIf="messageCtrl.touched && messageCtrl.dirty && messageCtrl.invalid" class="form__error">
+          <span>Can't be empty</span>
+          <img src="assets/contact/desktop/icon-error.svg" alt="error">
+        </div>
+      </div>
       <button class="btn btn-light">Submit</button>
     </form>
   </app-big-banner>
