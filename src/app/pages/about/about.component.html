@@ -1,7 +1,7 @@
 <div class="relative">
-  <img src="assets/shared/desktop/bg-pattern-leaf.svg" alt="leaf" class="about__img about__img--1">
-  <img src="assets/shared/desktop/bg-pattern-leaf.svg" alt="leaf" class="about__img about__img--2">
-  <app-big-banner>
+  <img src="assets/shared/desktop/bg-pattern-leaf.svg" alt="leaf" class="leaf leaf--1">
+  <img src="assets/shared/desktop/bg-pattern-leaf.svg" alt="leaf" class="leaf leaf--2">
+  <app-big-banner [page]="'about'">
     <span class="head">About Us</span>
     <span class="text">
       Founded in 2010, we are a creative agency that produces lasting results
@@ -10,10 +10,12 @@
       looking forward to creating brands, products, and digital experiences
       that connect with our clients’ audiences.
     </span>
-    <img src="assets/about/desktop/image-about-hero.jpg" alt="hero" class="note right-side">
+    <img src="assets/about/desktop/image-about-hero.jpg" alt="hero" class="note right-side desktop">
+    <img src="assets/about/tablet/image-about-hero.jpg" alt="hero" class="note right-side tablet relative">
   </app-big-banner>
   <section class="board relative mb br-15">
-    <img src="assets/about/desktop/image-world-class-talent.jpg" alt="world-class" class="board__img br-left">
+    <img src="assets/about/desktop/image-world-class-talent.jpg" alt="world-class" class="board__img board__img--1 desktop">
+    <img src="assets/about/tablet/image-world-class-talent.jpg" alt="world-class" class="board__img board__img--1 tablet">
     <div class="board__info relative">
       <h3 class="text-mds text-peach fw-500">World-class talent</h3>
       <div class="board__details">
@@ -37,7 +39,7 @@
   <section class="board relative mb br-15">
     <div class="board__info relative">
       <h3 class="text-mds text-peach fw-500">The real deal</h3>
-      <div class="board__details">
+      <div class="board__details board__details--2">
         <p class="text-xs text-dark fw-400">
           As strategic partners in our clients’ businesses, we are ready to take on any challenge as our own.
           Solving real problems require empathy and collaboration, and we strive to bring a fresh perspective to every
@@ -49,6 +51,7 @@
         </p>
       </div>
     </div>
-    <img src="assets/about/desktop/image-real-deal.jpg" alt="real-deal" class="board__img br-right">
+    <img src="assets/about/desktop/image-real-deal.jpg" alt="real-deal" class="board__img  board__img--2 desktop">
+    <img src="assets/about/tablet/image-real-deal.jpg" alt="real-deal" class="board__img  board__img--2 tablet">
   </section>
 </div>

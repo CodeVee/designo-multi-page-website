@@ -1,13 +1,31 @@
 @import 'components';
+@import 'mixins';
 
 .banner {
   height: 48rem;
   display: flex;
   overflow: hidden;
 
+  @include tablet-wide {
+    height: fit-content;
+    min-height: 63.2rem;
+    flex-direction: column;
+  }
+
   &__info {
     width: 63.5rem;
     padding: 13.5rem 9.5rem 13.5rem 8.2rem;
+
+    @include tablet-wide {
+      padding: 7.1rem 5.8rem 0;
+      width: 100%;
+
+      .about & {
+        padding-top: 6.4rem;
+        text-align: center;
+        height: 31.2rem;
+      }
+    }
 
     h2 {
       margin-bottom: 3.2rem;
@@ -16,6 +34,15 @@
 
   &__projected {
     flex: 1;
+
+    @include tablet-wide {
+
+      .about & {
+        order: -1;
+        z-index: 2;
+      }
+    }
+
   }
 
   &__img {
@@ -24,5 +51,10 @@
     width: 64rem;
     left: 0;
     top: -16rem;
+
+    @include tablet-wide {
+      left: -12.155rem;
+      top: -10.933rem;
+    }
   }
 }

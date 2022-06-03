@@ -1,9 +1,14 @@
 @import 'components';
+@import 'mixins';
 
 
 .product {
   background: $plain-peach;
   cursor: pointer;
+
+  @include tablet-wide {
+    display: flex;
+  }
 
   &:hover {
     background: $peach;
@@ -17,10 +22,21 @@
     height: 32rem;
     border-top-left-radius: 1.5rem;
     border-top-right-radius: 1.5rem;
+
+    @include tablet-wide {
+      border-bottom-left-radius: 1.5rem;
+      border-top-right-radius: 0;
+    }
   }
 
   &__info {
     padding: 3.2rem;
+
+    @include tablet-wide {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 
   &__header {

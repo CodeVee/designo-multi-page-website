@@ -1,5 +1,6 @@
 @import 'layout';
 @import 'components';
+@import 'mixins';
 
 
 .products {
@@ -7,12 +8,14 @@
 }
 .design {
   height: 30.8rem;
+  @include tablet-wide {
+    height: 42.4rem;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 2.4rem;
+  }
 }
 
 .leaf {
-  width: 100.6rem;
-  height: 59.4rem;
-  position: absolute;
   top: 12.6rem;
   left: -16.5rem;
 }

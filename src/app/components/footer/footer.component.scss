@@ -1,4 +1,5 @@
 @import 'components';
+@import 'mixins';
 
 .bar {
   height: 1px;
@@ -18,9 +19,17 @@
     opacity: .5;
     font-size: 1.6rem;
 
+    @include tablet-wide {
+      width: 22.3rem;
+    }
+
 
     &:first-of-type {
       margin-right: 3rem;
+
+      @include tablet-wide {
+        margin-right: 1rem;
+      }
     }
   }
 

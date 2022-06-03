@@ -1,5 +1,6 @@
 @import 'layout';
 @import 'components';
+@import 'mixins';
 
 .banner {
   height: 29.2rem;
@@ -10,8 +11,20 @@
   align-items: center;
   overflow: hidden;
 
+  @include tablet-wide {
+    height: 35rem;
+    flex-direction: column;
+  }
+
   &__info {
     width: 45.9rem;
+
+    @include tablet-wide {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
 
     h4 {
       width: 30rem;

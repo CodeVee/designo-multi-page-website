@@ -1,6 +1,6 @@
-<div class="bg-peach br-15 banner relative mb">
+<div class="bg-peach br-15 banner relative mb" [ngClass]="page">
   <img src="assets/about/desktop/bg-pattern-hero-about-desktop.svg" alt="ball" class="banner__img">
-  <div class="banner__info">
+  <div class="banner__info relative">
     <h2 class="text-white text-lg fw-500">
       <ng-content select=".head"></ng-content>
     </h2>
