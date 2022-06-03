@@ -8,10 +8,10 @@
     <router-outlet></router-outlet>
   </div>
 </main>
-<section class="project">
+<section class="project" *ngIf="!contactPage">
   <app-lower-banner></app-lower-banner>
 </section>
-<footer class="footer">
+<footer class="footer relative">
   <div class="container">
     <app-footer></app-footer>
   </div>
