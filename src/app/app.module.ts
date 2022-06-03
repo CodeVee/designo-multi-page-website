@@ -11,7 +11,7 @@ import { DesignCardComponent } from './components/design-card/design-card.compon
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { UpperBannerComponent } from './components/upper-banner/upper-banner.component';
 import { BigBannerComponent } from './components/big-banner/big-banner.component';
-import { LocationsComponent } from './components/locations/locations.component';
+import { LocationCardComponent } from './components/location-card/location-card.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,7 @@ import { LocationsComponent } from './components/locations/locations.component';
     ProductCardComponent,
     UpperBannerComponent,
     BigBannerComponent,
-    LocationsComponent
+    LocationCardComponent
   ],
   imports: [
     BrowserModule,

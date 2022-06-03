@@ -4,6 +4,7 @@ import { ProductType } from './models/product.model';
 import { AboutComponent } from './pages/about/about.component';
 import { DesignComponent } from './pages/design/design.component';
 import { HomeComponent } from './pages/home/home.component';
+import { LocationsComponent } from './pages/locations/locations.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'app-design', component: DesignComponent, data: { page: ProductType.App } },
   { path: 'graphic-design', component: DesignComponent, data: { page: ProductType.Graphic } },
   { path: 'about', component: AboutComponent },
+  { path: 'locations', component: LocationsComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
@@ -19,5 +21,5 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule {
-  static components = [HomeComponent, DesignComponent, AboutComponent];
+  static components = [HomeComponent, DesignComponent, AboutComponent, LocationsComponent];
  }

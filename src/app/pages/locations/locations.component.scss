@@ -1,0 +1,32 @@
+@import 'layout';
+@import 'components';
+
+
+.wrapper {
+  margin-bottom: 3.2rem;
+}
+
+.location {
+  grid-column: 1 / 3;
+  background: $plain-peach;
+  padding: 8.8rem 9.5rem;
+
+  &__alt {
+    grid-column: 2 / 4;
+  }
+
+  .ball {
+    position: absolute;
+    width: 58.4rem;
+    bottom: 0;
+    left: 0;
+  }
+
+  &__info {
+    margin-top: 2.4rem;
+  }
+}
+
+.map {
+  background: $peach;
+}
