@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ProductType } from './models/product.model';
 import { AboutComponent } from './pages/about/about.component';
+import { ContactComponent } from './pages/contact/contact.component';
 import { DesignComponent } from './pages/design/design.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LocationsComponent } from './pages/locations/locations.component';
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'graphic-design', component: DesignComponent, data: { page: ProductType.Graphic } },
   { path: 'about', component: AboutComponent },
   { path: 'locations', component: LocationsComponent },
+  { path: 'contact', component: ContactComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
@@ -21,5 +23,8 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule {
-  static components = [HomeComponent, DesignComponent, AboutComponent, LocationsComponent];
+  static components = [
+    HomeComponent, DesignComponent, AboutComponent,
+    LocationsComponent, ContactComponent
+  ];
  }
