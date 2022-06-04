@@ -1,0 +1,60 @@
+@import 'components';
+@import 'mixins';
+
+
+.product {
+  background: $plain-peach;
+  cursor: pointer;
+
+  @include tablet-wide {
+    display: flex;
+  }
+
+  @include mobile-wide {
+    flex-direction: column;
+    width: 32.7rem;
+  }
+
+  &:hover {
+    background: $peach;
+
+    h3, p {
+      color: $white;
+    }
+  }
+
+  &__img {
+    height: 32rem;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+
+    @include tablet-wide {
+      border-bottom-left-radius: 1.5rem;
+      border-top-right-radius: 0;
+    }
+
+    @include mobile-wide {
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 1.5rem;
+    }
+  }
+
+  &__info {
+    padding: 3.2rem;
+
+    @include tablet-wide {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    @include mobile-wide {
+      padding-left: 2.99rem;
+      padding-right: 2.91rem;
+    }
+  }
+
+  &__header {
+    margin-bottom: 1.6rem;
+  }
+}

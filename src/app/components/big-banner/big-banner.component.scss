@@ -1,0 +1,74 @@
+@import 'components';
+@import 'mixins';
+@import 'layout';
+
+.banner {
+  height: 48rem;
+  display: flex;
+  overflow: hidden;
+
+  @include tablet-wide {
+    height: fit-content;
+    min-height: 63.2rem;
+    flex-direction: column;
+  }
+
+  @include mobile-wide {
+    min-height: 71.5rem;
+  }
+
+  &__info {
+    width: 63.5rem;
+    padding: 13.5rem 9.5rem 13.5rem 8.2rem;
+
+    @include tablet-wide {
+      padding: 7.1rem 5.8rem 0;
+      width: 100%;
+
+      .about & {
+        padding-top: 6.4rem;
+        text-align: center;
+        height: 31.2rem;
+      }
+    }
+
+    @include mobile-wide {
+      padding: 8rem 2.4rem 0;
+      text-align: center;
+
+      .about & {
+        height: 39.5rem;
+      }
+    }
+
+    h2 {
+      margin-bottom: 3.2rem;
+    }
+  }
+
+  &__projected {
+    flex: 1;
+
+    @include tablet-wide {
+
+      .about & {
+        order: -1;
+        z-index: 2;
+      }
+    }
+
+  }
+
+  &__img {
+    position: absolute;
+    height: 64rem;
+    width: 64rem;
+    left: 0;
+    top: -16rem;
+
+    @include tablet-wide {
+      left: -12.155rem;
+      top: -10.933rem;
+    }
+  }
+}

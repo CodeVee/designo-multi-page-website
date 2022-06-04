@@ -1,0 +1,26 @@
+<div class="navbar relative" [ngClass]="{'navbar--dark': darkMode }">
+  <a routerLink="/">
+    <img *ngIf="!darkMode" src="assets/shared/desktop/logo-dark.png" alt="logo" class="navbar__logo">
+    <img *ngIf="darkMode" src="assets/shared/desktop/logo-light.png" alt="logo" class="navbar__logo">
+  </a>
+  <button (click)="toggle()" *ngIf="!darkMode" class="mobile navbar__button">
+    <img *ngIf="!active" class="navbar__button__img" src="assets/shared/mobile/icon-hamburger.svg" alt="hamburger">
+    <img *ngIf="active" class="navbar__button__img navbar__button__img--close" src="assets/shared/mobile/icon-close.svg" alt="close">
+  </button>
+  <div *ngIf="!darkMode && active" class="nested mobile-full">
+    <button (click)="navigate('/about')" class="nested__item">Our Company</button>
+    <button (click)="navigate('/locations')"  class="nested__item">Locations</button>
+    <button (click)="navigate('/contact')"  class="nested__item">Contact</button>
+  </div>
+  <ul class="navbar__list">
+    <li class="navbar__item">
+      <a routerLink="/about" class="navbar__link" [ngClass]="{'navbar__link--white': darkMode}">Our Company</a>
+    </li>
+    <li class="navbar__item">
+      <a routerLink="/locations" class="navbar__link" [ngClass]="{'navbar__link--white': darkMode}">Locations</a>
+    </li>
+    <li class="navbar__item">
+      <a routerLink="/contact" class="navbar__link" [ngClass]="{'navbar__link--white': darkMode}">Contact</a>
+    </li>
+  </ul>
+</div>

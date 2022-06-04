@@ -1,0 +1,42 @@
+@import 'mixins';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: $font-jost;
+  font-size: $fs-10;
+}
+
+@include desktop {
+  body, html {
+    font-size: $fs-8s;
+  }
+}
+
+@include tablet-wide {
+  body, html {
+    font-size: $fs-10s;
+  }
+}
+
+@include tablet {
+  body, html {
+    font-size: $fs-10;
+  }
+}
+
+@include mobile-wide {
+  body, html {
+    font-size: $fs-11s;
+  }
+}
+
+@include mobile {
+  body, html {
+    font-size: $fs-10;
+  }
+}

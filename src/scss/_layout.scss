@@ -1,0 +1,42 @@
+@import 'mixins';
+
+.container {
+  width: 111.1rem;
+  margin: 0 auto;
+
+  @include tablet-wide {
+    width: 68.9rem;
+  }
+
+  @include mobile-wide {
+    width: 32.7rem;
+  }
+}
+
+.grid {
+  display: grid;
+  column-gap: 3rem;
+
+  &-2 {
+    grid-template-columns: repeat(2, 1fr);
+
+    @include tablet-wide {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &-3 {
+    grid-template-columns: repeat(3, 1fr);
+
+    @include tablet-wide {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.mobile-full {
+  @include mobile-wide {
+    margin-left: -2.4rem;
+    margin-right: -2.4rem;
+  }
+}

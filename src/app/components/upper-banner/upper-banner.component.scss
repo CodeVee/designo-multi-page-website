@@ -1,0 +1,38 @@
+@import 'components';
+@import 'layout';
+@import 'mixins';
+
+.banner {
+  height: 25.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  @include mobile-wide {
+    height: 32rem;
+    padding: {
+      left: 2.4rem;
+      right: 2.4rem
+    };
+  }
+
+  h2 {
+    margin-bottom: 2.4rem;
+  }
+
+  p {
+    width: 40rem;
+
+    @include mobile-wide {
+      width: 100%;
+    }
+  }
+
+  .ball {
+    position: absolute;
+    right: 0;
+    z-index: 0;
+  }
+}

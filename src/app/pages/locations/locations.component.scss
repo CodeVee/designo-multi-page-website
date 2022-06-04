@@ -1,0 +1,73 @@
+@import 'layout';
+@import 'components';
+@import 'mixins';
+
+
+.wrapper {
+  margin-bottom: 3.2rem;
+
+  @include tablet-wide {
+    grid-template-rows: repeat(2, 1fr);
+    height: 68.3rem;
+    row-gap: 3.1rem;
+    margin-bottom: 12rem;
+  }
+
+  @include mobile-wide {
+    grid-template-rows: 32rem 39.4rem;
+    height: 71.4rem;
+    row-gap: 0;
+    margin-bottom: 4rem;
+  }
+}
+
+.location {
+  grid-column: 1 / 3;
+  background: $plain-peach;
+  padding: 8.8rem 9.5rem;
+
+  &__alt {
+    grid-column: 2 / 4;
+  }
+
+  @include tablet-wide {
+    grid-column: 1 / 2;
+    padding: 8.8rem 7.4rem;
+  }
+
+  @include mobile-wide {
+    grid-column: 1 / 2;
+    padding: 8rem 2.4rem;
+    text-align: center;
+  }
+
+  .ball {
+    position: absolute;
+    width: 58.4rem;
+    bottom: 0;
+    left: 0;
+
+    @include tablet-wide {
+      display: none;
+    }
+  }
+
+  &__info {
+    margin-top: 2.4rem;
+    grid-template-columns: repeat(2, 1fr);
+
+    @include mobile-wide {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: 17.4rem;
+    }
+  }
+}
+
+.map {
+  @include tablet-wide {
+    order: -1;
+  }
+}

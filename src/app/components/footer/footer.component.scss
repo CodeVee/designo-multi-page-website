@@ -1,0 +1,120 @@
+@import 'components';
+@import 'mixins';
+
+.bar {
+  height: 1px;
+  background: $white;
+  opacity: .1;
+  margin: 4rem 0 3.1rem;
+}
+
+.contact {
+  display: flex;
+
+  @include mobile-wide {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__info {
+    width: 35rem;
+    height: 7.8rem;
+    margin-right: auto;
+    color: $white;
+    opacity: .5;
+    font-size: 1.6rem;
+
+    @include tablet-wide {
+      width: 22.3rem;
+    }
+
+    @include mobile-wide {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+
+    &:first-of-type {
+      margin-right: 3rem;
+
+      @include tablet-wide {
+        margin-right: 1rem;
+      }
+
+      @include mobile-wide {
+        margin-right: 0;
+      }
+    }
+  }
+
+
+  &__social {
+    width: 18.4rem;
+    height: 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+    align-items: center;
+
+    @include mobile-wide {
+      align-self: center;
+    }
+  }
+
+  &__link {
+
+    img {
+      height: 2.4rem;
+      width: 2.4rem;
+    }
+
+    .second {
+      display: none;
+    }
+
+    &:nth-child(3) {
+      img {
+        height: 2rem;
+      }
+    }
+
+    &:hover {
+      .first {
+        display: none;
+      }
+
+      .second {
+        display: inline;
+      }
+    }
+  }
+}
+
+.nav {
+  display: none;
+  list-style-type: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 9.6rem;
+  margin-bottom: 4rem;
+
+  @include mobile-wide {
+    display: flex;
+  }
+
+
+  &__item {
+    font-weight: $fw-400;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+  }
+
+  &__link {
+    text-decoration: none;
+      color: $white;
+  }
+}

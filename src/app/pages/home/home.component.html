@@ -1,0 +1,63 @@
+<div class="home relative">
+  <img src="assets/shared/desktop/bg-pattern-leaf.svg" alt="leaf" class="leaf leaf--1">
+  <img src="assets/shared/desktop/bg-pattern-leaf.svg" alt="leaf" class="leaf leaf--2">
+  <header class="bg-peach br-15 br-15-reset mb header mobile-full">
+    <div class="header__info">
+      <h1 class="text-lg fw-500 text-white">Award-winning custom designs and digital branding solutions</h1>
+      <p class="text-xs text-xs-s fw-400 text-white">
+        With over 10 years in the industry, we are experienced in creating fully responsive websites, app design,
+        and engaging brand experiences. Find out more about our services.
+      </p>
+      <button class="btn btn-light">Learn more</button>
+    </div>
+    <img src="assets/home/desktop/phone.png" alt="phone" class="header__img">
+    <img src="assets/shared/desktop/bg-pattern-small-circle.svg" alt="ball" class="ball">
+  </header>
+  <section class="design mb grid grid-2">
+    <app-design-card class="design__item" *ngFor="let designType of designTypes" [designType]="designType"></app-design-card>
+  </section>
+  <section class="goals mb grid grid-3">
+    <div class="goal">
+      <figure class="goal__img relative">
+        <div class="peach-mask"></div>
+        <img src="assets/home/desktop/illustration-passionate.svg" alt="Passionate" class="relative">
+      </figure>
+      <div class="goal__info">
+        <h2 class="goal__header text-sm text-dark fw-500 text-upper ls-5">Passionate</h2>
+        <p class="goal__text text-xs text-dark fw-400">
+          Each project starts with an in-depth brand research to ensure we only create products that serve a purpose. We merge
+          art, design, and technology into exciting new solutions.
+        </p>
+      </div>
+    </div>
+    <div class="goal">
+      <figure class="goal__img relative">
+        <div class="peach-mask"></div>
+        <img src="assets/home/desktop/illustration-resourceful.svg" alt="Resourceful" class="relative">
+      </figure>
+      <div class="goal__info">
+        <h2 class="goal__header text-sm text-dark fw-500 text-upper ls-5">Resourceful</h2>
+        <p class="goal__text text-xs text-dark fw-400">
+          Everything that we do has a strategic purpose. We use an agile approach in all of our projects and value customer
+          collaboration. It guarantees superior results that fulfill our clients’ needs.
+        </p>
+      </div>
+    </div>
+    <div class="goal">
+      <figure class="goal__img relative">
+        <div class="peach-mask"></div>
+        <img src="assets/home/desktop/illustration-friendly.svg" alt="Friendly" class="relative">
+      </figure>
+      <div class="goal__info">
+        <h2 class="goal__header text-sm text-dark fw-500 text-upper ls-5">Friendly</h2>
+        <p class="goal__text text-xs text-dark fw-400">
+          We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we
+          strive to give them the best experience a company can provide.
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+
