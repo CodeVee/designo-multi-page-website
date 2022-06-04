@@ -1,4 +1,5 @@
-import { AfterViewInit, Component } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import * as L from 'leaflet';
 import { Locations } from 'src/app/models/location.model';
 
@@ -7,9 +8,19 @@ import { Locations } from 'src/app/models/location.model';
   templateUrl: './locations.component.html',
   styleUrls: ['./locations.component.scss']
 })
-export class LocationsComponent implements AfterViewInit {
+export class LocationsComponent implements OnInit, AfterViewInit {
 
   locations = Locations;
+
+  constructor(private title: Title) { }
+
+  ngOnInit(): void {
+    this.title.setTitle('Locations');
+  }
+
+  ngAfterViewInit(): void {
+    this.initMaps();
+  }
 
   private initMaps(): void {
 
@@ -28,10 +39,6 @@ export class LocationsComponent implements AfterViewInit {
 
       tile.addTo(map);
     })
-  }
-
-  ngAfterViewInit(): void {
-    this.initMaps();
   }
 
 }

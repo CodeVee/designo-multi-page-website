@@ -1,4 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { DesignType } from 'src/app/models/design.model';
@@ -15,8 +16,9 @@ export class DesignComponent implements OnInit, OnDestroy {
   message = '';
   products: Product[] = [];
   designTypes: DesignType[] = [];
+  private page = 'Design';
   protected sub!: Subscription;
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute, private title: Title) { }
 
   ngOnInit(): void {
     this.sub = this.route.data.subscribe(
@@ -24,18 +26,21 @@ export class DesignComponent implements OnInit, OnDestroy {
         switch (data.page as ProductType) {
           case ProductType.Web:
             this.header = 'Web Design';
+            this.page = 'Web Design';
             this.message = 'We build websites that serve as powerful marketing tools and bring memorable brand experiences.';
             this.products = WebProducts;
             this.designTypes = [DesignType.AppDesign, DesignType.GraphicDesign];
             break;
           case ProductType.App:
             this.header = 'App Design';
+            this.page = 'App Design';
             this.message = 'Our mobile designs bring intuitive digital solutions to your customers right at their fingertips.';
             this.products = AppProducts;
             this.designTypes = [DesignType.WebDesign, DesignType.GraphicDesign];
             break;
           case ProductType.Graphic:
             this.header = 'Graphic Design';
+            this.page = 'Graphic Design';
             this.message = 'We deliver eye-catching branding materials that are tailored to meet your business objectives.';
             this.products = GraphicProducts;
             this.designTypes = [DesignType.AppDesign, DesignType.WebDesign];
@@ -43,6 +48,8 @@ export class DesignComponent implements OnInit, OnDestroy {
           default:
             break;
         }
+
+        this.title.setTitle(this.page);
       }
     )
   }
