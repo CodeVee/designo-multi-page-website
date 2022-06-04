@@ -16,6 +16,11 @@
     flex-direction: column;
   }
 
+  @include mobile-wide {
+    height: 37.9rem;
+    padding: 6.4rem 2.4rem;
+  }
+
   &__info {
     width: 45.9rem;
 
@@ -26,9 +31,17 @@
       text-align: center;
     }
 
+    @include mobile-wide {
+      width: 100%;
+    }
+
     h4 {
       width: 30rem;
       margin-bottom: 1.8rem;
+
+      @include mobile-wide {
+        width: 100%;
+      }
     }
   }
 

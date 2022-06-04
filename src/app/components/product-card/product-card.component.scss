@@ -10,6 +10,11 @@
     display: flex;
   }
 
+  @include mobile-wide {
+    flex-direction: column;
+    width: 32.7rem;
+  }
+
   &:hover {
     background: $peach;
 
@@ -27,6 +32,11 @@
       border-bottom-left-radius: 1.5rem;
       border-top-right-radius: 0;
     }
+
+    @include mobile-wide {
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 1.5rem;
+    }
   }
 
   &__info {
@@ -36,6 +46,11 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+    }
+
+    @include mobile-wide {
+      padding-left: 2.99rem;
+      padding-right: 2.91rem;
     }
   }
 

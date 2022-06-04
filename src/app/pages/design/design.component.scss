@@ -5,6 +5,10 @@
 
 .products {
   row-gap: 3.2rem;
+
+  @include mobile-wide {
+    row-gap: 4rem;
+  }
 }
 .design {
   height: 30.8rem;
@@ -12,6 +16,10 @@
     height: 42.4rem;
     grid-template-rows: repeat(2, 1fr);
     row-gap: 2.4rem;
+  }
+
+  @include tablet-wide {
+    height: 52.4rem;
   }
 }
 

@@ -11,6 +11,11 @@
 .contact {
   display: flex;
 
+  @include mobile-wide {
+    flex-direction: column;
+    align-items: center;
+  }
+
   &__info {
     width: 35rem;
     height: 7.8rem;
@@ -23,6 +28,12 @@
       width: 22.3rem;
     }
 
+    @include mobile-wide {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
 
     &:first-of-type {
       margin-right: 3rem;
@@ -30,20 +41,13 @@
       @include tablet-wide {
         margin-right: 1rem;
       }
+
+      @include mobile-wide {
+        margin-right: 0;
+      }
     }
   }
 
-  &__header {
-    font-weight: $fw-700;
-    font-size: 1.6rem;
-    line-height: 2.6rem;
-  }
-
-  &__sub {
-    font-weight: $fw-400;
-    font-size: 1.6rem;
-    line-height: 2.6rem;
-  }
 
   &__social {
     width: 18.4rem;
@@ -52,6 +56,10 @@
     justify-content: space-between;
     align-self: flex-end;
     align-items: center;
+
+    @include mobile-wide {
+      align-self: center;
+    }
   }
 
   &__link {
@@ -80,5 +88,33 @@
         display: inline;
       }
     }
+  }
+}
+
+.nav {
+  display: none;
+  list-style-type: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 9.6rem;
+  margin-bottom: 4rem;
+
+  @include mobile-wide {
+    display: flex;
+  }
+
+
+  &__item {
+    font-weight: $fw-400;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+  }
+
+  &__link {
+    text-decoration: none;
+      color: $white;
   }
 }

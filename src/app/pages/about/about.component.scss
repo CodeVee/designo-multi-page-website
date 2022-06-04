@@ -1,5 +1,6 @@
 @import 'components';
 @import 'mixins';
+@import 'layout';
 
 .leaf {
 
@@ -19,15 +20,6 @@
   width: 100%;
 }
 
-.br-left {
-  border-top-left-radius: 1.5rem;
-  border-bottom-left-radius: 1.5rem;
-}
-
-.br-right {
-  border-top-right-radius: 1.5rem;
-  border-bottom-right-radius: 1.5rem;
-}
 .board {
   height: 64rem;
   display: flex;
@@ -36,6 +28,14 @@
   @include tablet-wide {
     height: 73.6rem;
     flex-direction: column;
+  }
+
+  @include mobile-wide {
+    height: 86.5rem;
+
+    &:first-of-type {
+      margin-top: -12rem;
+    }
   }
 
   &__img {
@@ -67,6 +67,9 @@
       }
     }
 
+    @include mobile-wide {
+      border-radius: 0;
+    }
 
   }
 
@@ -77,6 +80,10 @@
     @include tablet-wide {
       padding: 6.8rem 5.8rem;
       text-align: center;
+    }
+
+    @include mobile-wide {
+      padding: 8rem 2.4rem;
     }
 
     h3 {
@@ -98,6 +105,10 @@
       &--2 {
         height: 18.2rem;
       }
+    }
+
+    @include mobile-wide {
+      height: 32.5rem;
     }
   }
 }

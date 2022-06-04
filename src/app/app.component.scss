@@ -1,9 +1,15 @@
 @import 'layout';
 @import 'components';
+@import 'mixins';
 
 .nav {
   padding-top: 6.4rem;
   margin-bottom: 6.7rem;
+
+  @include mobile-wide {
+    padding-top: 3.5rem;
+    margin-bottom: 3.4rem;
+  }
 }
 
 .main {

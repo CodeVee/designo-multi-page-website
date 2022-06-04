@@ -1,18 +1,19 @@
-@import 'variables';
+@import 'mixins';
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  &__logo {
-    width: 19.6rem;
-    height: 2.4rem;
-
-    &--light {
-      width: 20.2rem;
-      height: 2.7rem;
+  @include mobile-wide {
+    &--dark {
+      justify-content: center;
     }
+  }
+
+  &__logo {
+    width: 20.2rem;
+    height: 2.7rem;
   }
 
   &__list {
@@ -20,6 +21,10 @@
     display: flex;
     justify-content: space-between;
     width: 37rem;
+
+    @include mobile-wide {
+      display: none;
+    }
   }
 
   &__item {

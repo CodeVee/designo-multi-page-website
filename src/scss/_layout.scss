@@ -33,3 +33,10 @@
     }
   }
 }
+
+.mobile-full {
+  @include mobile-wide {
+    margin-left: -2.4rem;
+    margin-right: -2.4rem;
+  }
+}

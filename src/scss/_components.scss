@@ -6,16 +6,31 @@
   &-lg {
     font-size: 4.8rem;
     line-height: 4.8rem;
+
+    @include mobile-wide {
+      font-size: 3.2rem;
+      line-height: 3.6rem;
+    }
   }
 
   &-md {
     font-size: 4rem;
     line-height: 4rem;
+
+    @include mobile-wide {
+      font-size: 3.2rem;
+      line-height: 3.6rem;
+    }
   }
 
   &-mds {
     font-size: 4rem;
     line-height: 4.8rem;
+
+    @include mobile-wide {
+      font-size: 2.8rem;
+      line-height: 3.6rem;
+    }
   }
 
   &-sm {
@@ -26,6 +41,13 @@
   &-xs {
     font-size: 1.6rem;
     line-height: 2.6rem;
+
+    @include mobile-wide {
+      &-s {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+      }
+    }
   }
 
   &-white {
@@ -101,6 +123,12 @@
 
 .br-15 {
   border-radius: 1.5rem;
+
+  &-reset {
+    @include mobile-wide {
+      border-radius: 0;
+    }
+  }
 }
 
 .mb {
@@ -155,6 +183,9 @@
   display: none;
   @include tablet-wide {
     display: initial;
+  }
+  @include mobile-wide {
+    display: none;
   }
 }
 

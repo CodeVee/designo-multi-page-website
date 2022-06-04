@@ -12,6 +12,13 @@
     row-gap: 3.1rem;
     margin-bottom: 12rem;
   }
+
+  @include mobile-wide {
+    grid-template-rows: 32rem 39.4rem;
+    height: 71.4rem;
+    row-gap: 0;
+    margin-bottom: 4rem;
+  }
 }
 
 .location {
@@ -28,6 +35,12 @@
     padding: 8.8rem 7.4rem;
   }
 
+  @include mobile-wide {
+    grid-column: 1 / 2;
+    padding: 8rem 2.4rem;
+    text-align: center;
+  }
+
   .ball {
     position: absolute;
     width: 58.4rem;
@@ -42,6 +55,14 @@
   &__info {
     margin-top: 2.4rem;
     grid-template-columns: repeat(2, 1fr);
+
+    @include mobile-wide {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: 17.4rem;
+    }
   }
 }
 

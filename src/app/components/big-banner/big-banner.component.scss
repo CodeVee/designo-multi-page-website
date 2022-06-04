@@ -1,5 +1,6 @@
 @import 'components';
 @import 'mixins';
+@import 'layout';
 
 .banner {
   height: 48rem;
@@ -10,6 +11,10 @@
     height: fit-content;
     min-height: 63.2rem;
     flex-direction: column;
+  }
+
+  @include mobile-wide {
+    min-height: 71.5rem;
   }
 
   &__info {
@@ -24,6 +29,15 @@
         padding-top: 6.4rem;
         text-align: center;
         height: 31.2rem;
+      }
+    }
+
+    @include mobile-wide {
+      padding: 8rem 2.4rem 0;
+      text-align: center;
+
+      .about & {
+        height: 39.5rem;
       }
     }
 
